@@ -1,0 +1,174 @@
+body{
+    margin:0;
+    
+}
+*{
+    font-family: 'Patrick Hand', cursive;
+    box-sizing:border-box;
+}
+
+.main{
+    display:block;
+    min-height: 100vh;
+    width: 100%;
+    position:relative;
+
+}
+nav{
+    display : flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin:0 20px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+nav ul li a::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background: #F1C40F;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.logo{
+  text-decoration: none;  
+  font-family: 'Dancing Script', cursive;
+  color: aliceblue;
+  font-size: 80px;
+  
+}
+.s1{
+    color: #F1C40F;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.textbox{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center; 
+}
+.textbox h1{
+    font-size:50px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+
+}
+.s2{
+    color: #F1C40F;
+}
+.donatebtn{
+    display:inline-block;
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    border:3px solid rgb(255, 255, 255);
+    padding:10px 38px;
+    font-size:25px;
+    background:#F1C40F;
+    position:relative;
+    cursor:pointer;
+}
+.donatebtn:hover{
+    border: 1px solid #f5df88;
+    background: #f5df88;
+    transition : 0.5s;
+}
+.about{
+    width:100%;
+    padding: 100px 0px;
+    background-color: #ecce53;
+}
+.about img{
+    height: auto;
+    width: 500px;
+    
+    
+}
+.abt-text{
+    width: 550px;
+}
+.abt{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.abt-text h2{
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.abt-text p{
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+footer{
+    position:relative;
+    width:100%;
+    height:400px;
+    background:#101010;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color:#fff;
+    margin-bottom: 20px;
+    font-weight:bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social a{
+    width: 35px;
+    height: 35px;
+    
+    float: inline-end;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ecce53; */
+    border-radius: 20%;
+    margin: 22px 10px;
+    text-decoration: none;
+    color: white;
+}
+.end{
+    position:absolute;
+    color: rgb(168, 168, 168);
+    bottom: 35px;
+    font-size: 14px;
+}
